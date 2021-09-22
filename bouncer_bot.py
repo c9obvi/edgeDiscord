@@ -20,7 +20,7 @@ flag_response = [
     "Please refrain from sharing or rquesting any private keys, violators will be banned!",
     "Reminder, asking for or revealing private keys will get you banned!",
     "Asking for or giving private keys is a bannable offense on this server!",
-    "Disclosing or requesting private keys on this server is bannable and your account will be marked."
+    "Disclosing or requesting private keys on this server is bannable and your account will be marked!"
 ]
 
 #user unique ID to keep tabs before banning OR for promoting -- user IDs will be key to tracking
