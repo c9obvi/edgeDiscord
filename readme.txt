@@ -1,4 +1,4 @@
-this is the basic instructions:
+this is the basic instructions: built off of discord.py "pip3 install discord.py"
 
 This is home to Edge Wallet app's Discord bots. Written and maintained by two newbs.
 If you are reading this and don't work for Edge.... Hi....
