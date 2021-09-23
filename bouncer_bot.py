@@ -33,7 +33,7 @@ async def on_ready():
 
 @client.event
 async def on_member_join(member):
-    await member.create_dm()
+    await member.create_dm('Welcome to the channel, please keep it clean and scam free in here or I will have to through you out')
     await member.dm_channel.send(
         f'Hi {member.name}, welcome to my Discord server!'
     )
