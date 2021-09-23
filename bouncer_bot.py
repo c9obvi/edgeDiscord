@@ -76,7 +76,7 @@ async def on_message(message):
 # Monitor users messages for filtering
     #this one is attempting to combine words to meet both conditions (testing)
     if any(word in msg for word in pre_flags):
-        flagCheck()
+        flagCheck(msg, flag_words)
         if flag_checker(True):
             await message.channel.send(random.choice(flag_response))
     
