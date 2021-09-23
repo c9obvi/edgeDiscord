@@ -39,6 +39,14 @@ async def on_message(message):
     if message.content.startswith('$ada'):
         quote = get_ada()
         await message.channel.send(quote)
+    if message.content.startswith('$xmr'):
+        quote = get_xmr()
+    if message.content.startswith('$ltc'):
+        quote = get_ltc()
+    if message.content.startswith('$sol'):
+        quote = get_sol()
+    if message.content.startswith('$doge'):
+        quote = get_doge()
 
 def get_btc():
     response1 = requests.get('https://api.coinbase.com/v2/prices/BTC-USD/buy')
@@ -46,7 +54,7 @@ def get_btc():
     prequote = json_data['data']
     currency = prequote['currency']
     amount = prequote['amount']
-    quote = "current BTC price is: $"+amount+" " +currency
+    quote = "current Bitcoin (BTC) price is:  $"+amount+" " +currency
     return(quote)
 
 def get_eth():
@@ -55,7 +63,7 @@ def get_eth():
     prequote = json_data['data']
     currency = prequote['currency']
     amount = prequote['amount']
-    quote = "current ETH price is: $"+amount+" " +currency
+    quote = "current Ethereum (ETH) price is:  $"+amount+" " +currency
     return(quote)
 
 def get_ada():
@@ -64,9 +72,45 @@ def get_ada():
     prequote = json_data['data']
     currency = prequote['currency']
     amount = prequote['amount']
-    quote = "current ADA price is: $"+amount+" " +currency
+    quote = "current Cardano (ADA) price is:  $"+amount+" " +currency
     return(quote)
 
+def get_xmr():
+    response1 = requests.get('https://api.coinbase.com/v2/prices/XMR-USD/buy')
+    json_data = json.loads(response1.text)
+    prequote = json_data['data']
+    currency = prequote['currency']
+    amount = prequote['amount']
+    quote = "current Monero (XMR) price is:  $"+amount+" " +currency
+    return(quote)
 
+def get_ltc():
+    response1 = requests.get('https://api.coinbase.com/v2/prices/LTC-USD/buy')
+    json_data = json.loads(response1.text)
+    prequote = json_data['data']
+    currency = prequote['currency']
+    amount = prequote['amount']
+    quote = "current Litecoin (LTC) price is:  $"+amount+" " +currency
+    return(quote)
+
+def get_sol():
+    response1 = requests.get('https://api.coinbase.com/v2/prices/SOL-USD/buy')
+    json_data = json.loads(response1.text)
+    prequote = json_data['data']
+    currency = prequote['currency']
+    amount = prequote['amount']
+    quote = "current Solana (SOL) price is:  $"+amount+" " +currency
+    return(quote)
+
+def get_doge():
+    response1 = requests.get('https://api.coinbase.com/v2/prices/DOGE-USD/buy')
+    json_data = json.loads(response1.text)
+    prequote = json_data['data']
+    currency = prequote['currency']
+    amount = prequote['amount']
+    quote = "current Doge (DOGE) price is:  $"+amount+" " +currency
+    return(quote)
+
+    
 
 client.run(TOKEN)
