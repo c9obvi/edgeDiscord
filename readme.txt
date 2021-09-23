@@ -12,6 +12,21 @@ also "pip3 install python-dotenv" if not included.
 
 built off of discord.py "pip3 install discord.py" (should be included in requirements.txt)
 
+remember to create a .env file with the these 2 keys:
+
+# .env these are the bouncers auth stuff
+
+DISCORD_TOKEN=''
+DISCORD_GUILD=''
+
+loaded in the .py file as 
+
+from dotenv import load_dotenv
+
+load_dotenv()
+TOKEN = os.getenv('DISCORD_TOKEN')
+GUILD = os.getenv('DISCORD_GUILD')
+
 
 -Berto
 
