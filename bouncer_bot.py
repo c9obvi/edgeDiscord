@@ -14,7 +14,7 @@ GUILD = os.getenv('DISCORD_GUILD')
 client = discord.Client()
 
 #define flaggable words dictionary?
-flag_words = ["private keys", "private key"]
+flag_words = ["private keys", "private key", "Private Keys", "Private keys", "PRIVATE KEYS", "private Keys"]
 #response to flagged private key talk -- add @TheUserinQuestion + keep tabs on users
 flag_response = [
     "Please refrain from sharing or rquesting any private keys, violators will be banned!",
