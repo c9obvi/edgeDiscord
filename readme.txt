@@ -18,7 +18,9 @@ built off of discord.py "pip3 install discord.py" (should be included in require
 ~~~~~~~~~~~~~~END PYTHON~~~~~~~~~~~
 
 
-Below is the instructions for the js portion of our bots. Our team divided the task amongst two newbs. One a python degen and the other commited to learning JavaScript. 
+Below is the instructions for the js portion of our bots. 
+Our team divided the task amongst two newbs.
+One a python degen and the other commited to learning JavaScript. 
 
 
 ~~~~~~~~~~~~~~JavaScript~~~~~~~~~~~
