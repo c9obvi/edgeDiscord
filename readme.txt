@@ -1,4 +1,4 @@
-this is the basic instructions: 
+these are the basic instructions: 
 
 ~~~~~~~~~~~~PYTHON~~~~~~~~~~~~~~~~~
 
