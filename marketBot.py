@@ -41,12 +41,17 @@ async def on_message(message):
         await message.channel.send(quote)
     if message.content.startswith('$xmr'):
         quote = get_xmr()
+        await message.channel.send(quote)
     if message.content.startswith('$ltc'):
         quote = get_ltc()
+        await message.channel.send(quote)        
     if message.content.startswith('$sol'):
         quote = get_sol()
+        await message.channel.send(quote)
     if message.content.startswith('$doge'):
         quote = get_doge()
+        await message.channel.send(quote)
+
 
 def get_btc():
     response1 = requests.get('https://api.coinbase.com/v2/prices/BTC-USD/buy')

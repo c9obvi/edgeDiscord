@@ -90,7 +90,7 @@ def flagCheck(msg, flag_words):
     set1 = set(flag_words) 
     set2 = set(msg) 
     if set1.intersection(set2): 
-        return True 
+        flag_checker = True 
     else: 
         return False
 
