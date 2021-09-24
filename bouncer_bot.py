@@ -79,7 +79,7 @@ async def on_message(message):
         flagCheck(msg, flag_words)
         if flag_checker(True):
             await message.channel.send(random.choice(flag_response))
-    
+
 
 #  if word in pre flag = True
 #  then we check if user "msg" contains "flag_words" 
@@ -90,7 +90,7 @@ def flagCheck(msg, flag_words):
     set1 = set(flag_words) 
     set2 = set(msg) 
     if set1.intersection(set2): 
-        flag_checker = true
+        flag_checker = True
         return flag_checker
     else: 
         return False
